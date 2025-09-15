@@ -1,0 +1,85 @@
+<html>
+<head>
+	<title>From Me, To You</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script> 
+  <link rel="stylesheet" type="text/css" href="style1.css">
+ 
+</head>
+
+<audio controls autoplay loop style="display: none;">
+    <source src="moonlight.mp3" type="audio/mpeg">
+</audio>
+
+<div id="wrapper">
+     <div id="particles-js"></div>
+    <h1 class="fixed_heading">Hi Vamika,</h1>
+  <div class="container" id="letter-container">
+    <h2 style="font-weight: bold;">19-05-2025</h3>
+    <h3 id="day">The day I saw you for the first time</h3>
+    <br>
+    <br>
+    <h3>French class - that little dimly lit classroom. You walked in with your greenish-blue kurta, and I was <p>mesmerised</p>. Maybe I have the details a little wrong - but I remember you sitting down while the teacher asked you where someone else was; and for the next few days - I couldn't help but steal little glances of you when you were focused on something else.</h3>
+    <br>
+    <h3>And maybe things were quiet for a few months after that - we never really talked. I'll be a little honest here - Trupti kinda hid your pouch that dayy just so I could have an excuse to talk to you. And ever since that day, every conversation made me fall even harder. I was awkward at the beginning, and I still am - but who wouldn't be when faced with eyes that could level mounbtains? Maybe that's a little dramatic - but it sounds nice, doesn't it 😝</h3>
+    <br>
+    <h3>You're sweet, kind, <p>gorgeous</p> - and most importantly - <p>you love dinosaurs</p>. I can't think of anything more perfect even if I tried. Our little hi's in the corridor always make my day better - I miss it when I don't see it, and it's so cute how you look for me sometimes. I can't tell you how <p>excited</p> I am to go to that garbha with you or go to that photobooth on dfest 😝</h3>
+    <br>
+    <h3>I guess what I'm trying to say is - I really like you and I'd really like to be together. This page might be a bit too much, or even cringe - but it's from the bottom of my heart. </h3>
+    <br> 
+    <h3><p>Tes yeux sont incroyables, et tes beau rire est magnifique.</p></h3>
+    
+        <button class="normb" onclick="goStar()">See what's next ;)</button>
+        <br>
+        <br> 
+        <br> 
+  </div>
+</div>
+
+
+
+<script src="particles.js"></script> <script>
+  particlesJS('particles-js', {
+    "particles": {
+      "number": {
+        "value": 100, 
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "shape": {
+        "type": "image", 
+        "image": {
+          "src": "heart100.png", 
+          "width": 30,
+          "height": 30
+        }
+      },
+      "size": {
+        "value": 10,
+        "random": true
+      },
+      "move": {
+        "enable": true,
+        "speed": 1,
+        "direction": "bottom",
+        "random": true,
+        "straight": false,
+        "out_mode": "out",
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
+      }
+    },  
+  });
+</script>
+<script src="main.js"></script>
+</body>
+</html>

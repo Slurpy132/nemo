@@ -1,0 +1,96 @@
+body {
+      margin: 0;
+      background: #000000;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    #starfield canvas {
+    position: fixed;   /* pin it to the background */
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    z-index: 0;        /* push behind text/buttons */
+    }
+
+
+    #text-container {
+      position: relative;
+      z-index: 1;
+      margin-top: 200px;
+      font-size: 1.5rem;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid white;
+      width: 0ch;
+      animation: typing 2s steps(40, end) forwards,
+                 blink 0.8s step-end alternate;
+    }
+
+    @keyframes typing {
+      from { width: 0ch; }
+      to { width: 38ch; }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    @media(max-width: 768px) {
+        #text-container {
+            font-size: 15px;
+        }
+
+        #nono{
+            font-size: 15px;
+        }
+    }
+
+
+    .buttons {
+      margin-top: 200px;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    button {
+      position:P relative;
+      z-index: 1;
+      padding: 12px 24px;
+      background: teal;
+      border: 2px solid white;
+      border-radius: 20px;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background: white;
+      color: #0b132b;
+      cursor: url('heart15.png') 10 10, auto;
+    }
+
+    #nextPage {
+      display: none;
+    }
+
+    #noSay {
+        position: relative;
+        z-index: 1;
+        margin-top: 20px;
+        font-size: 0.6rem;
+        color: white;
+        font-weight: lighter;
+        font-style: italic;
+
+    }
